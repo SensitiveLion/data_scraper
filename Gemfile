@@ -7,3 +7,5 @@ gem "pismo"
 gem "mechanize"
 
 gem "wikipedia-client"
+
+gem "mediawiki_api"
