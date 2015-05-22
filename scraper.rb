@@ -1,7 +1,8 @@
-require "Mechanize"
-
 require "pry"
+require "json"
+require 'wikipedia'
+page = Wikipedia.find( 'Bob Hasan' )
 
-agent = Mechanize.new
-@google = agent.get('https://www.cia.gov/library/publications/the-world-factbook/wfbExt/region_noa.html')
-pp @google
+  split = page.content.split("\n\n")
+
+binding.pry
