@@ -8,12 +8,10 @@ sub_header = []
 text = []
 
 doc.css('p + h2').each do |h|
-  if h.text != "Contents" && h.text != "References"&& h.text != "Further reading" && h.text != "External links"
-    header << h.text
-  end
+  header << h.text
 end
 
-doc.css('p + h3').each do |s_h|
+doc.css('.mw-body h3').each do |s_h|
   sub_header << s_h.text
 end
 
